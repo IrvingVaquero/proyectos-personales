@@ -1,0 +1,529 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    height: 152px;
+    width: 100%;
+}
+
+header nav.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+header nav.menu img.logo-header{
+    width: 35px;
+}
+
+header nav.menu ul li{
+    display: inline-block;
+}
+
+
+header nav.menu ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    
+}
+
+header nav.menu ul li a:hover{
+    color: green;
+    
+}
+
+/*Menu derecho*/
+
+header nav.login{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+header nav.login ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav.login ul li a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+header nav.login ul li:last-child a{
+    background-color: black;
+    color: white;
+}
+
+header nav.login ul li:last-child a:hover{
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+header nav.login ul li:first-child a{
+    border: none;
+}
+
+header nav.login ul li:first-child a:hover{
+    color: green;
+}
+
+header nav.login ul li a.link-center:hover{
+    background-color: rgba(153, 153, 153,.50);
+}
+header nav.login ul li:first-child a span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('./assets/icons/iconmap.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header h2{
+    grid-column: 1/3;
+    font-size: 1.6rem;
+    color: white;
+    width: 100%;
+    padding: 15px 0 15px 100px;
+    background-color: #1e3932;
+    letter-spacing: 2px;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    padding-top: 152px;
+    
+}
+
+main section.principal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:calc(100vh - 152px) ;
+    background-color: rgb(212, 233, 226);
+    background-image: url('https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.principal div{
+    color: #1e3932;
+    margin-left: 50px;
+}
+main section.principal div h3{
+    width: 300px;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+main section.principal div p{
+    font-size: 1.9rem;
+}
+
+main section.principal div a.link-button{
+    display: inline-block;
+    font-size: 1.9rem;
+    padding: 5px 20px;
+    border: 1px solid;
+    margin: 20px 0;
+    color: white;
+    border-radius: 50px;
+    background-color:#00754a ;
+}
+
+main section.principal div a.link-button:hover{
+    background-color:#00a267 ;
+
+}
+
+main section.principal div p a.link-p{
+    text-decoration: underline;
+    color: #1e3932;
+}
+
+main section.principal div p a.link-p:hover{
+    text-decoration: none;
+}
+
+section.getstarted{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom:120px;
+    text-align: center;
+}
+
+section.getstarted .getstarted--container-inter {
+    width: 92%;
+    min-width: 320px;
+}
+
+.getstarted--container-inter .getstarted--title h3{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 25px;
+}
+
+.getstarted--container-inter .getstarted--title p{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 25px;
+
+}
+
+.getstarted--container-inter article.getstarted--steps {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item p:first-child{
+    display: inline-block;
+    font-size: 3rem;
+    color: #045034;
+    padding: 10px 17px;
+    border: 1px solid #045034;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item .title--item{
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    margin-bottom: 25px;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item p:nth-child(3){
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item p:last-child a{
+    color: #00a267;
+    text-decoration: underline;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item p:last-child a:hover{
+    text-decoration: none;
+}
+
+section.favoritesfree{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f8f5;
+}
+
+section.favoritesfree .favoritesfree-title--container{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+section.favoritesfree .favoritesfree-title--container h3{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+section.favoritesfree .favoritesfree-title--container li{
+    display: inline-block;
+    
+}
+
+section.favoritesfree .favoritesfree-title--container li button{
+    font-size: 2.8rem;
+    padding: 0 25px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+section.favoritesfree .favoritesfree-title--container li button span{
+    font-size: 2rem;
+    color: #cba258;
+}
+
+section.favoritesfree .favoritesfree-title--container li:first-child button{
+    border-bottom: 5px solid #045034;
+}
+
+section.favoritesfree .product--container{
+    width: 100%;
+    padding: 25px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#d4e9e2 ;
+}
+
+section.favoritesfree .product--container .product-img--container{
+    width: 40%;
+}
+section.favoritesfree .product--container .product-img--container img{
+    width: 90%;
+}
+
+section.favoritesfree .product--container .product-description--container{
+    width: 40%;
+    text-align: initial;
+}
+
+section.favoritesfree .product--container .product-description--container h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+section.favoritesfree .product--container .product-description--container p{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.getstarted--container-inter .getstarted--title .text-title--extras{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.getstarted--steps-item .link-extra{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #00a267;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+.getstarted--steps-item .link-extra:hover{
+    text-decoration: none;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item .extra-img--container{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.getstarted--container-inter article.getstarted--steps .getstarted--steps-item .extra-img--container img{
+    width: 100%;
+}
+
+section.getstarted.color-pay{
+    background-color: #f2f0eb;
+}
+
+section.getstarted .cashstart-prices--container{
+    width: 90%;
+    height: auto;
+}
+
+.cashstart-prices--container article.price-article--container{
+    width: 100%;
+    display: flex;
+}
+
+.cashstart-prices--container article.price-article--container:first-child{
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid salmon;
+}
+
+article.price-article--container .prices--container, .pay--container{
+    width:33%;
+    text-align: initial;
+}
+article.price-article--container .pay--container{
+   display: flex;
+   gap: 10px;
+}
+
+article.price-article--container .pay--container .pay-text--container{
+    width: calc(100% - 112px);
+}
+
+article.price-article--container .prices--container p:first-child{
+    font-size: 2.7rem;
+    line-height: 2.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+article.price-article--container .prices--container p:last-child{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    
+}
+
+article.price-article--container .pay--container .pay-img--container {
+    width: 112px;
+}
+
+article.price-article--container .pay--container .pay-img--container img{
+    width: 100%;
+}
+
+article.price-article--container .pay--container .pay-text--container p:first-child{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 15px;
+}
+article.price-article--container .pay--container .pay-text--container p:last-child{
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+section.code-promo{
+    width: 100%;
+    padding-bottom: 100px;
+    height: auto;
+    margin-top: 100px;
+}
+
+section.code-promo .code-promo--container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+section.code-promo .code-promo--container p:nth-child(1){
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+section.code-promo .code-promo--container p:nth-child(2){
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+section.code-promo .code-promo--container .input-code--container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+section.code-promo .code-promo--container .input-code--container input{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 5px;
+    height: 49px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+section.code-promo .code-promo--container .input-code--container label{
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1.7rem;
+    pointer-events: none;
+}
+
+.input-code--container input:focus{
+    outline-color: #00a267;
+}
+
+section.code-promo .input-code--container input:valid ~ .label-focus,section.code-promo .input-code--container input:focus ~ .label-focus{
+    color: #00a267;
+    transform: translateY(-25px);
+    font-size: 1.5rem;
+    background-color: white;
+    
+    
+}
+
+section.code-promo .code-promo--container .button-left{
+    width: auto;
+    font-size: 1.7rem;
+    font-weight: 600;
+    align-self: flex-end;
+    padding: 7px 24px;
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.green {
+    color: #00a267;
+}
+
+section.questions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.questions article{
+    width: 40%;
+}
+
+section.questions article h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+}
+
+section.questions article p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding-bottom: 100px;
+}
+
+section.questions article p a{
+    text-decoration: underline;
+    color: #00a267;
+}
+
+section.questions article p a:hover{
+    text-decoration: none;
+}
